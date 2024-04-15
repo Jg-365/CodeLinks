@@ -1,0 +1,136 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, #3c04f5, #b18094);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  margin-left: 6%;
+  margin-right: 6%;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 20px;
+  min-width: 400px;
+  max-width: 650px;
+  width: 70%;
+  z-index: 0;
+}
+
+.card .profile {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 10%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card .profile .picture {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .profile .picture .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #d2bfec, #051b55);
+}
+
+.card .profile .picture .inner-img {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .profile .picture .inner-img img {
+  object-fit: cover;
+  position: auto;
+  top: 50%;
+  left: 50%;
+  height: 140px;
+  width: 140px;
+}
+
+.card .profile h1 {
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 1px;
+  font-family: "Inter";
+  font-weight: 800;
+}
+
+.card .profile h3 {
+  font-family: "Inter";
+  text-align: center;
+  font-size: 1em;
+  color: rgba(58, 70, 70, 0.968);
+  font-weight: 600;
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 2px;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.card .content a {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin: 4px;
+  transition: 0.5s ease;
+  display: flex;
+  justify-items: flex-start;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 600;
+  background-color: rgb(227, 198, 205);
+  text-decoration: none;
+  color: black;
+  box-shadow: rgb(164, 151, 151) 1px 2px 3px;
+}
+
+.card .content a img {
+  margin-right: 4%;
+}
+
+.card .content a:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+  cursor: pointer;
+  color: white;
+  background-image: linear-gradient(to bottom, #412ac5, #87497f);
+}
